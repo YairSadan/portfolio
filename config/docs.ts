@@ -12,15 +12,15 @@ export const docsConfig: DocsConfig = {
     },
     {
       title: "Work",
-      href: "/work",
+      href: "#work",
     },
     {
       title: "About",
-      href: "/about",
+      href: "#about",
     },
     {
       title: "Resume",
-      href: "/resume",
+      href: "#resume",
     },
     {
       title: "GitHub",
