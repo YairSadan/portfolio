@@ -37,7 +37,7 @@ export default function RootLayout({
         >
           <div className="relative flex min-h-screen flex-col bg-background">
             <SiteHeader />
-            <main className="flex flex-col flex-1 bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-gray-800 dark:to-gray-900">
+            <main className="flex flex-1 bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-gray-800 dark:to-gray-900">
               {children}
             </main>
             {/* <SiteFooter /> */}

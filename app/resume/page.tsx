@@ -1,5 +1,3 @@
-import Image from "next/image";
-import resumePicture from "@/public/resume.jpeg";
 import Link from "next/link";
 
 export default function ResumePage() {
@@ -9,17 +7,7 @@ export default function ResumePage() {
         <h1>Resume</h1>
         <p>Here&apos;s my resume</p>
       </div>
-      <Link
-        href="https://resume.io/r/53szp89oP"
-        target="_blank"
-      >
-        <Image
-          src={resumePicture}
-          height={700}
-          alt="picture of my resume"
-          quality={100}
-        />
-      </Link>
+      <iframe src={"/resume.pdf"} height={700} width={900}/>
     </div>
   );
 }
