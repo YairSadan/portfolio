@@ -7,8 +7,6 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
-import { ScrollArea } from "./ui/scroll-area";
-import { docsConfig } from "@/config/docs";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 export function MobileNav() {
@@ -65,22 +63,6 @@ export function MobileNav() {
           </Avatar>
           <span className="font-bold">{siteConfig.name}</span>
         </MobileLink>
-        <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
-          <div className="flex flex-col space-y-3">
-            {docsConfig.mainNav?.map(
-              (item) =>
-                item.href && (
-                  <MobileLink
-                    key={item.href}
-                    href={item.href}
-                    onOpenChange={setOpen}
-                  >
-                    {item.title}
-                  </MobileLink>
-                )
-            )}
-          </div>
-        </ScrollArea>
       </SheetContent>
     </Sheet>
   );
