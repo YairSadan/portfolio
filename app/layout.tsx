@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
@@ -29,6 +30,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <Analytics />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -37,7 +39,7 @@ export default function RootLayout({
         >
           <div className="relative flex min-h-screen flex-col bg-background">
             <main className="flex flex-col flex-1 bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-gray-800 dark:to-gray-900">
-            <SiteHeader />
+              <SiteHeader />
               {children}
             </main>
             {/* <SiteFooter /> */}
