@@ -20,7 +20,7 @@ export const docsConfig: DocsConfig = {
     },
     {
       title: "Resume",
-      href: "#resume",
+      href: "/resume.pdf",
     },
     {
       title: "GitHub",

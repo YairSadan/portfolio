@@ -1,5 +1,6 @@
 export const siteConfig = {
   name: "Sadan Portfolio",
+  avatar: "/avatar.png",
   url: "https://sadan.vercel.app", // todo: update this
   ogImage: "/og-image.png", // todo: update this
   description: "Sadan's portfolio",

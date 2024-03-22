@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { siteConfig } from "@/config/site";
 import { ScrollArea } from "./ui/scroll-area";
 import { docsConfig } from "@/config/docs";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -58,7 +59,10 @@ export function MobileNav() {
           className="flex items-center"
           onOpenChange={setOpen}
         >
-          TODO add icon
+          <Avatar>
+            <AvatarImage src={siteConfig.avatar} alt={siteConfig.name} />
+            <AvatarFallback>{siteConfig.name[0]}</AvatarFallback>
+          </Avatar>
           <span className="font-bold">{siteConfig.name}</span>
         </MobileLink>
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">

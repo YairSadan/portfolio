@@ -1,9 +1,16 @@
 import Image from "next/image";
+import AnimatedText from "./animated-text";
 export default function About() {
   return (
     <div className="flex flex-row md:px-16 py-6">
       <div className="flex flex-col p-5 gap-y-3">
-        <h1 className="text-6xl font-bold">Hello, I am Yair Sadan</h1>
+        <AnimatedText
+          el="h1"
+          text="Hello, I am Yair Sadan"
+          once
+          repeatDelay={10000}
+          className="text-6xl font-bold"
+        />
         <h2 className="text-3xl font-semibold">A full-stack developer</h2>
         <p className="text-xl font-normal text-balance max-w-[700px]">
           I am a full-stack developer with a passion for building and

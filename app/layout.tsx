@@ -36,8 +36,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="relative flex min-h-screen flex-col bg-background">
+            <main className="flex flex-col flex-1 bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-gray-800 dark:to-gray-900">
             <SiteHeader />
-            <main className="flex flex-1 bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-gray-800 dark:to-gray-900">
               {children}
             </main>
             {/* <SiteFooter /> */}
