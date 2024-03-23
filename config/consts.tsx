@@ -1,58 +1,4 @@
-import { cn } from "@/lib/utils";
-const className =
-  "h-full w-full transform transition ease-in-out duration-300 hover:scale-110";
-export const stack = [
-  {
-    title: "C#",
-    logo: <span className={cn(className, "icon-[logos--c-sharp]")} />,
-    level: 95,
-  },
-  {
-    title: "JavaScript",
-    logo: <span className={cn(className, "icon-[logos--javascript]")} />,
-    level: 95,
-  },
-  {
-    title: "TypeScript",
-    logo: <span className={cn(className, "icon-[logos--typescript-icon]")} />,
-    level: 95,
-  },
-  {
-    title: "Python",
-    logo: <span className={cn(className, "icon-[logos--python]")} />,
-    level: 95,
-  },
-  {
-    title: "NEXT.JS",
-    logo: <span className={cn(className, "icon-[logos--nextjs-icon]")} />,
-    level: 95,
-  },
-  {
-    title: "REACT",
-    logo: <span className={cn(className, "icon-[logos--react]")} />,
-    level: 95,
-  },
-  {
-    title: "NODE.JS",
-    logo: <span className={cn(className, "icon-[logos--nodejs-icon-alt]")} />,
-    level: 95,
-  },
-  {
-    title: "MONGODB",
-    logo: <span className={cn(className, "icon-[logos--mongodb-icon]")} />,
-    level: 95,
-  },
-  {
-    title: "TAILWINDCSS",
-    logo: <span className={cn(className, "icon-[logos--tailwindcss-icon]")} />,
-    level: 95,
-  },
-  {
-    title: "FRAMER MOTION",
-    logo: <span className={cn(className, "icon-[logos--framer] m-4")} />,
-    level: 95,
-  },
-];
+import { stack } from "@/components/about";
 
 export const projects = [
   {
@@ -64,11 +10,7 @@ export const projects = [
     underConstruction: false,
     previewImageLight: "/previewImages/isra-bot-light.png",
     previewImageDark: "/previewImages/isra-bot-dark.png",
-    stack: [
-        stack[1],
-        stack[2],
-        stack[3],
-    ]
+    stack: [stack[1], stack[2], stack[3]],
   },
   {
     title: "Task Manager",

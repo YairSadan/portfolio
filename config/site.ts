@@ -1,4 +1,5 @@
-import { projects, stack } from "./consts";
+import { stack } from "@/components/about";
+import { projects } from "./consts";
 
 export const siteConfig = {
   name: "Sadan Portfolio",

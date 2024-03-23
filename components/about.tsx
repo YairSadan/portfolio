@@ -3,7 +3,8 @@ import Image from "next/image";
 import AnimatedText from "./framer-components/animated-text";
 import { motion } from "framer-motion";
 import FlipAnimation from "./framer-components/flip-animation";
-import { stack } from "@/config/consts";
+import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
 
 export default function About() {
   return (
@@ -72,3 +73,58 @@ const item = {
     opacity: 1,
   },
 };
+
+const className =
+  "h-full w-full transform transition ease-in-out duration-300 hover:scale-110";
+export const stack = [
+  {
+    title: "C#",
+    logo: <span className={cn(className, "icon-[logos--c-sharp]")} />,
+    level: 95,
+  },
+  {
+    title: "JavaScript",
+    logo: <span className={cn(className, "icon-[logos--javascript]")} />,
+    level: 95,
+  },
+  {
+    title: "TypeScript",
+    logo: <span className={cn(className, "icon-[logos--typescript-icon]")} />,
+    level: 95,
+  },
+  {
+    title: "Python",
+    logo: <span className={cn(className, "icon-[logos--python]")} />,
+    level: 95,
+  },
+  {
+    title: "NEXT.JS",
+    logo: <span className={cn(className, "icon-[logos--nextjs-icon]")} />,
+    level: 95,
+  },
+  {
+    title: "REACT",
+    logo: <span className={cn(className, "icon-[logos--react]")} />,
+    level: 95,
+  },
+  {
+    title: "NODE.JS",
+    logo: <span className={cn(className, "icon-[logos--nodejs-icon-alt]")} />,
+    level: 95,
+  },
+  {
+    title: "MONGODB",
+    logo: <span className={cn(className, "icon-[logos--mongodb-icon]")} />,
+    level: 95,
+  },
+  {
+    title: "TAILWINDCSS",
+    logo: <span className={cn(className, "icon-[logos--tailwindcss-icon]")} />,
+    level: 95,
+  },
+  {
+    title: "FRAMER MOTION",
+    logo: <span className={cn(className, "icon-[logos--framer] m-4")} />,
+    level: 95,
+  },
+];
