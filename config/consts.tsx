@@ -1,4 +1,4 @@
-import { stack } from "@/components/about";
+import { Stack, stack } from "@/components/about";
 
 export const projects = [
   {
@@ -10,7 +10,7 @@ export const projects = [
     underConstruction: false,
     previewImageLight: "/previewImages/isra-bot-light.png",
     previewImageDark: "/previewImages/isra-bot-dark.png",
-    stack: [stack[1], stack[2], stack[3]],
+    stack: [stack[12], stack[4], stack[9]] as Stack[],
   },
   {
     title: "Task Manager",
@@ -21,6 +21,7 @@ export const projects = [
     underConstruction: false,
     previewImageLight: "/previewImages/task-manager-light.png",
     previewImageDark: "/previewImages/task-manager-dark.png",
+    stack: [stack[0], stack[4], stack[13]] as Stack[],
   },
   {
     title: "Clients Manager",
@@ -31,6 +32,7 @@ export const projects = [
     underConstruction: true,
     previewImageLight: "/previewImages/under-construction.png",
     previewImageDark: "/previewImages/under-construction.png",
+    stack: [stack[0], stack[1], stack[2]] as Stack[],
   },
   {
     title: "Portfolio",
@@ -38,8 +40,11 @@ export const projects = [
       "This is the portfolio you are currently looking at, built with Next.js and TailwindCSS 🚀",
     link: "https://yairsadan.vercel.app",
     githubLink: "https://github.com/YairSadan/portfolio",
-    underConstruction: false,
+    underConstruction: true,
     previewImageLight: "/previewImages/portfolio-light.png",
     previewImageDark: "/previewImages/portfolio-dark.png",
+    stack: [stack[9], stack[4], stack[8]] as Stack[],
   },
 ];
+
+export type Project = (typeof projects)[0];

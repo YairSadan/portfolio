@@ -88,7 +88,29 @@ export const stack = [
   },
   {
     title: "FRAMER MOTION",
-    logo: <span className={cn(className, "icon-[logos--framer] m-4")} />,
+    logo: <span className={cn(className, "icon-[logos--framer]")} />,
+    level: 95,
+  },
+  {
+    title: "GIT",
+    logo: <span className={cn(className, "icon-[logos--git-icon]")} />,
+    level: 95,
+  },
+  {
+    title: "PRISMA",
+    logo: <span className={cn(className, "icon-[logos--prisma]")} />,
+    level: 95,
+  },
+  {
+    title: "OPENAI",
+    logo: <span className={cn(className, "icon-[logos--openai-icon]")} />,
+    level: 95,
+  },
+  {
+    title: "POSTGRESQL",
+    logo: <span className={cn(className, "icon-[logos--postgresql]")} />,
     level: 95,
   },
 ];
+
+export type Stack = (typeof stack)[0];
