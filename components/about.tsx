@@ -1,10 +1,9 @@
-"use client";
 import Image from "next/image";
 import AnimatedText from "./framer-components/animated-text";
 import { motion } from "framer-motion";
 import FlipAnimation from "./framer-components/flip-animation";
-import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
+import UlAnimation from "./framer-components/ul-animation";
 
 export default function About() {
   return (
@@ -26,22 +25,7 @@ export default function About() {
           technologies including React, Node.js, and MongoDB. I am always
           looking to learn new things and improve my skills.
         </p>
-        <motion.ul
-          className="grid grid-cols-3 md:grid-cols-5 gap-4 col mt-4 max-w-fit"
-          variants={container}
-          initial="hidden"
-          animate="visible"
-        >
-          {stack.map((tech) => (
-            <motion.li
-              key={tech.title}
-              className="border-2 rounded-full flex justify-center items-center h-16 w-16"
-              variants={item}
-            >
-              {tech.logo}
-            </motion.li>
-          ))}
-        </motion.ul>
+        <UlAnimation elements={stack} />
       </div>
       <FlipAnimation>
         <Image
@@ -54,28 +38,8 @@ export default function About() {
     </div>
   );
 }
-const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.2,
-    },
-  },
-};
 
-const item = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
-
-const className =
-  "h-full w-full transform transition ease-in-out duration-300 hover:scale-110";
+const className = "h-full w-full";
 export const stack = [
   {
     title: "C#",
