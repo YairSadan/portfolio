@@ -17,7 +17,7 @@ export default function Projects() {
       {projects.map((project) => (
         <Card key={project.title} className="flex flex-row">
           <div className="flex flex-col gap-2 p-2">
-            <CardHeader>
+            <CardHeader className="min-w-56">
               <CardTitle className="md:flex-row flex flex-col gap-2">
                 {project.title}
                 {project.underConstruction && (
@@ -39,7 +39,7 @@ export default function Projects() {
               </div>
             </CardHeader>
           </div>
-          <CardContent className="flex flex-grow flex-col gap-2 items-center justify-center">
+          <CardContent className="flex flex-grow flex-col pl-0 gap-2 items-center justify-center">
             <Link
               href={project.link}
               target="_blank"
