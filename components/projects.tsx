@@ -18,11 +18,11 @@ export default function Projects() {
         <Card key={project.title} className="flex flex-row">
           <div className="flex flex-col gap-2 p-2">
             <CardHeader>
-              <CardTitle className="flex gap-2">
+              <CardTitle className="md:flex-row flex flex-col gap-2">
                 {project.title}
                 {project.underConstruction && (
-                  <p className="text-muted-foreground">
-                    🏗️👷‍♂️ (under construction)
+                  <p className="text-muted-foreground text-xs">
+                    🏗️👷‍♂️ under construction
                   </p>
                 )}
               </CardTitle>
