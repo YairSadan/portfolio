@@ -15,9 +15,9 @@ export default function Projects() {
   return (
     <div id="projects" className="grid md:grid-cols-2 gap-4">
       {projects.map((project) => (
-        <Card key={project.title} className="flex flex-row">
+        <Card key={project.title} className="md:flex">
           <div className="flex flex-col gap-2 p-2">
-            <CardHeader className="min-w-56">
+            <CardHeader className="min-w-56 max-w-xl">
               <CardTitle className="md:flex-row flex flex-col gap-2">
                 {project.title}
                 {project.underConstruction && (
@@ -39,11 +39,11 @@ export default function Projects() {
               </div>
             </CardHeader>
           </div>
-          <CardContent className="flex flex-grow flex-col pl-0 gap-2 items-center justify-center">
+          <CardContent className="flex flex-col items-center justify-center space-y-1 pt-3">
             <Link
               href={project.link}
               target="_blank"
-              className="relative group hover:scale-110 hover:shadow-2xl ease-in-out transform transition w-36"
+              className="relative group hover:scale-110 hover:shadow-2xl ease-in-out transform transition"
             >
               <Image
                 className="dark:hidden rounded-sm"
@@ -67,11 +67,11 @@ export default function Projects() {
                 <ExternalLinkIcon />
               </Button>
             </Link>
-            <Button asChild>
+            <Button size={"lg"} asChild>
               <Link
                 href={project.githubLink}
                 target="_blank"
-                className=" space-x-2 w-36"
+                className="space-x-2"
               >
                 <GitHubLogoIcon />
                 <ExternalLinkIcon />
