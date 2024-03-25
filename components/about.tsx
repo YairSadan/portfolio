@@ -1,6 +1,5 @@
 import Image from "next/image";
 import AnimatedText from "./framer-components/animated-text";
-import { motion } from "framer-motion";
 import FlipAnimation from "./framer-components/flip-animation";
 import { cn } from "@/lib/utils";
 import UlAnimation from "./framer-components/ul-animation";

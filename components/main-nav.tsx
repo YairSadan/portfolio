@@ -35,7 +35,7 @@ export default function MainNav() {
             pathname === "#projects" ? "text-foreground" : "text-foreground/60"
           )}
         >
-          Proje
+          Projects
         </Link>
         <Link
           href="#resume"

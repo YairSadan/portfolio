@@ -38,7 +38,7 @@ export const projects = [
     title: "Portfolio",
     description:
       "This is the portfolio you are currently looking at, built with Next.js and TailwindCSS 🚀",
-    link: "https://yairsadan.vercel.app",
+    link: "/",
     githubLink: "https://github.com/YairSadan/portfolio",
     underConstruction: true,
     previewImageLight: "/previewImages/portfolio-light.png",
