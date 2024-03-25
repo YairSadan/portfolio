@@ -32,7 +32,10 @@ export default function Projects() {
               <span className="text-sm font-semibold">Tools used:</span>
               <div className="flex gap-2">
                 {project.stack.map((stack) => (
-                  <span key={stack.title} className="h-6 w-6">
+                  <span
+                    key={stack.title}
+                    className="h-6 w-6 dark:bg-primary p-0.5 rounded-sm"
+                  >
                     {stack.logo}
                   </span>
                 ))}
