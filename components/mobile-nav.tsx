@@ -63,6 +63,17 @@ export function MobileNav() {
           </Avatar>
           <span className="font-bold">{siteConfig.name}</span>
         </MobileLink>
+        <div className="flex flex-col space-y-3 pt-2">
+          {siteConfig.navLinks.map((navLink) => (
+            <MobileLink
+              key={navLink.href}
+              href={navLink.href}
+              onOpenChange={setOpen}
+            >
+              {navLink.title}
+            </MobileLink>
+          ))}
+        </div>
       </SheetContent>
     </Sheet>
   );

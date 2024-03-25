@@ -13,6 +13,16 @@ export const siteConfig = {
     facebook: "https://facebook.com/profile.php?id=100004369271980",
     instagram: "https://instagram.com/yair_sadan1",
   },
+  navLinks: [
+    {
+      title: "About",
+      href: "#about",
+    },
+    {
+      title: "Projects",
+      href: "#projects",
+    },
+  ],
   stack: stack,
   projects: projects,
 };
