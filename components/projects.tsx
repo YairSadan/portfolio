@@ -13,9 +13,9 @@ import { projects } from "@/config/consts";
 
 export default function Projects() {
   return (
-    <div id="projects" className="grid md:grid-cols-2 gap-4">
+    <div id="projects" className="grid lg:grid-cols-2 gap-4">
       {projects.map((project) => (
-        <Card key={project.title} className="md:flex">
+        <Card key={project.title} className="lg:flex">
           <div className="flex flex-col gap-2 p-2">
             <CardHeader className="min-w-56 max-w-xl">
               <CardTitle className="md:flex-row flex flex-col gap-2">
