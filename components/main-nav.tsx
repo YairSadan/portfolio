@@ -1,12 +1,8 @@
-"use client";
 import { siteConfig } from "@/config/site";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 
 export default function MainNav() {
-  const pathname = usePathname();
   return (
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-6 flex items-center space-x-2">
@@ -21,30 +17,15 @@ export default function MainNav() {
       <nav className="flex items-center gap-6 text-sm">
         <Link
           href="#about"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname === "#about" ? "text-foreground" : "text-foreground/60"
-          )}
+          className="transition-colors hover:text-foreground/80"
         >
           About
         </Link>
         <Link
           href="#projects"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname === "#projects" ? "text-foreground" : "text-foreground/60"
-          )}
+          className="transition-colors hover:text-foreground/60"
         >
           Projects
-        </Link>
-        <Link
-          href="#resume"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname === "#resume" ? "text-foreground" : "text-foreground/60"
-          )}
-        >
-          Resume
         </Link>
       </nav>
     </div>
