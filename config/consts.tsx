@@ -14,8 +14,7 @@ export const projects = [
   },
   {
     title: "Task Manager",
-    description:
-      "lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo",
+    description:"Developed a Full Stack application leveraging .NET Core for a robust WebAPI backend and Next.js for an interactive frontend. This solution is designed to enhance team productivity and organization by offering advanced task management features. It enables efficient task assignment, progress tracking, and collaborative tools, all within a user-friendly interface. This project highlights my skills in integrating diverse technologies to create a seamless, productive work environment for teams.",
     link: "https://todos-puce-one.vercel.app",
     githubLink: "https://github.com/YairSadan/todos",
     underConstruction: false,
@@ -26,7 +25,7 @@ export const projects = [
   {
     title: "Clients Manager",
     description:
-      "lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut",
+      "Web app built with nextjs 14 to manage clients appointments and payments",
     link: "https://clients-management.vercel.app/",
     githubLink: "https://github.com/YairSadan/clients-management",
     underConstruction: true,
