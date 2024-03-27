@@ -29,7 +29,6 @@ export default function About() {
           connect to discuss how I can contribute to your team!
         </p>
         <h3 className="text-lg md:text-3xl font-semibold">My stack:</h3>
-        <UlAnimation elements={stack} />
       </div>
       <FlipAnimation>
         <Image
@@ -42,79 +41,3 @@ export default function About() {
     </div>
   );
 }
-
-const className = "h-full w-full";
-export const stack = [
-  {
-    title: "C#",
-    logo: <span className={cn(className, "icon-[logos--c-sharp]")} />,
-    level: 95,
-  },
-  {
-    title: "JavaScript",
-    logo: <span className={cn(className, "icon-[logos--javascript]")} />,
-    level: 95,
-  },
-  {
-    title: "TypeScript",
-    logo: <span className={cn(className, "icon-[logos--typescript-icon]")} />,
-    level: 95,
-  },
-  {
-    title: "Python",
-    logo: <span className={cn(className, "icon-[logos--python]")} />,
-    level: 95,
-  },
-  {
-    title: "NEXT.JS",
-    logo: <span className={cn(className, "icon-[logos--nextjs-icon]")} />,
-    level: 95,
-  },
-  {
-    title: "REACT",
-    logo: <span className={cn(className, "icon-[logos--react]")} />,
-    level: 95,
-  },
-  {
-    title: "NODE.JS",
-    logo: <span className={cn(className, "icon-[logos--nodejs-icon-alt]")} />,
-    level: 95,
-  },
-  {
-    title: "MONGODB",
-    logo: <span className={cn(className, "icon-[logos--mongodb-icon]")} />,
-    level: 95,
-  },
-  {
-    title: "TAILWINDCSS",
-    logo: <span className={cn(className, "icon-[logos--tailwindcss-icon]")} />,
-    level: 95,
-  },
-  {
-    title: "FRAMER MOTION",
-    logo: <span className={cn(className, "icon-[logos--framer]")} />,
-    level: 95,
-  },
-  {
-    title: "GIT",
-    logo: <span className={cn(className, "icon-[logos--git-icon]")} />,
-    level: 95,
-  },
-  {
-    title: "PRISMA",
-    logo: <span className={cn(className, "icon-[logos--prisma]")} />,
-    level: 95,
-  },
-  {
-    title: "OPENAI",
-    logo: <span className={cn(className, "icon-[logos--openai-icon]")} />,
-    level: 95,
-  },
-  {
-    title: "POSTGRESQL",
-    logo: <span className={cn(className, "icon-[logos--postgresql]")} />,
-    level: 95,
-  },
-];
-
-export type Stack = (typeof stack)[0];
