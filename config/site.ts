@@ -1,4 +1,3 @@
-import { stack } from "@/components/about";
 import { projects } from "./consts";
 
 export const siteConfig = {
@@ -23,7 +22,6 @@ export const siteConfig = {
       href: "#projects",
     },
   ],
-  stack: stack,
   projects: projects,
 };
 
