@@ -2,6 +2,12 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "./ui/tooltip";
 
 const stack = [
   {
@@ -56,6 +62,10 @@ const stack = [
     title: "openai",
     href: "https://www.openai.com/",
   },
+  {
+    title: "postgresql",
+    href: "https://www.postgresql.org/",
+  },
 ];
 const MyStack = () => {
   const radius = 100; // Radius of the circle
@@ -84,7 +94,16 @@ const MyStack = () => {
                     top: `calc(50% + ${y}px)`,
                   }}
                 >
-                  <LogoLink title={logo.title} href={logo.href} />
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger>
+                        <LogoLink title={logo.title} href={logo.href} />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>{logo.title}</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
                 </div>
               </motion.li>
             );
@@ -143,6 +162,9 @@ const LogoLink = ({ href, title }: LogoLinkProps) => {
       break;
     case "openai":
       className += " icon-[logos--openai-icon]";
+      break;
+    case "postgresql":
+      className += " icon-[logos--postgresql]";
       break;
   }
 
