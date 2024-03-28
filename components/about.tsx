@@ -26,16 +26,7 @@ export default function About() {
           Located in Tel Aviv, open to local and remote opportunities. Let&apos;s
           connect to discuss how I can contribute to your team!
         </p>
-        <h3 className="text-lg md:text-3xl font-semibold">My stack:</h3>
       </div>
-      <FlipAnimation>
-        <Image
-          src={"/avatars/me-waving.png"}
-          height={300}
-          width={400}
-          alt="picture of me"
-        />
-      </FlipAnimation>
     </div>
   );
 }

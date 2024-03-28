@@ -60,7 +60,8 @@ const stack = [
 const MyStack = () => {
   const radius = 100; // Radius of the circle
   return (
-    <motion.ul variants={container} initial="hidden" animate="visible">
+    <motion.ul variants={container} initial="hidden" animate="visible" className="z-10">
+      <h3 className="text-3xl font-semibold">My Stack:</h3>
       <div className="h-80 flex justify-center items-center rounded-full">
         <div className="relative">
           {stack.map((logo, index) => {
