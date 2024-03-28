@@ -60,7 +60,12 @@ const stack = [
 const MyStack = () => {
   const radius = 100; // Radius of the circle
   return (
-    <motion.ul variants={container} initial="hidden" animate="visible" className="z-10">
+    <motion.ul
+      variants={container}
+      initial="hidden"
+      animate="visible"
+      className="z-10"
+    >
       <h3 className="text-3xl font-semibold">My Stack:</h3>
       <div className="h-80 flex justify-center items-center rounded-full">
         <div className="relative">
@@ -79,10 +84,7 @@ const MyStack = () => {
                     top: `calc(50% + ${y}px)`,
                   }}
                 >
-                  <LogoLink
-                    title={logo.title}
-                    href={logo.href}
-                  />
+                  <LogoLink title={logo.title} href={logo.href} />
                 </div>
               </motion.li>
             );
@@ -145,9 +147,9 @@ const LogoLink = ({ href, title }: LogoLinkProps) => {
   }
 
   className +=
-    " size-16 -translate-x-1/2 -translate-y-1/2 absolute cursor-pointer bg-black/40 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out";
+    " size-16 -translate-x-1/2 -translate-y-1/2 absolute cursor-pointer border-2 bg-black/40 dark:bg-white/40 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out";
 
-  return <Link href={href} target="_blank" className={className}></Link>;
+  return <Link href={href} target="_blank" className={className} />;
 };
 
 const container = {
