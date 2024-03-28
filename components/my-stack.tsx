@@ -1,4 +1,5 @@
 "use client";
+import { format } from "date-fns";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
@@ -13,58 +14,86 @@ const stack = [
   {
     title: "csharp",
     href: "https://docs.microsoft.com/en-us/dotnet/csharp/",
+    start: new Date(2022, 10),
+    level: 7,
   },
   {
     title: "javascript",
     href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    start: new Date(2023, 3),
+    level: 8,
   },
   {
     title: "typescript",
     href: "https://www.typescriptlang.org/",
+    start: new Date(2023, 4),
+    level: 9,
   },
   {
     title: "python",
     href: "https://www.python.org/",
+    start: new Date(2023, 7),
+    level: 4,
   },
   {
     title: "nextjs",
     href: "https://nextjs.org/",
+    start: new Date(2023, 8),
+    level: 10,
   },
   {
     title: "react",
     href: "https://reactjs.org/",
+    start: new Date(2023, 7),
+    level: 7,
   },
   {
     title: "nodejs",
     href: "https://nodejs.org/",
+    start: new Date(2023, 7),
+    level: 6,
   },
   {
     title: "mongodb",
     href: "https://www.mongodb.com/",
+    start: new Date(2023, 7),
+    level: 6,
   },
   {
     title: "tailwindcss",
     href: "https://tailwindcss.com/",
+    start: new Date(2023, 9),
+    level: 9,
   },
   {
     title: "framer motion",
     href: "https://www.framer.com/motion/",
+    start: new Date(2024, 3),
+    level: 3,
   },
   {
     title: "git",
     href: "https://git-scm.com/",
+    start: new Date(2023, 4),
+    level: 8,
   },
   {
     title: "prisma",
     href: "https://www.prisma.io/",
+    start: new Date(2023, 9),
+    level: 7,
   },
   {
     title: "openai",
     href: "https://www.openai.com/",
+    start: new Date(2024, 2),
+    level: 6,
   },
   {
     title: "postgresql",
     href: "https://www.postgresql.org/",
+    start: new Date(2024, 1),
+    level: 4,
   },
 ];
 const MyStack = () => {
@@ -84,6 +113,7 @@ const MyStack = () => {
             const x = radius * Math.cos(angle); // Calculate x position
             const y = radius * Math.sin(angle); // Calculate y position
 
+
             return (
               <motion.li key={logo.title} variants={item}>
                 <div
@@ -100,7 +130,9 @@ const MyStack = () => {
                         <LogoLink title={logo.title} href={logo.href} />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>{logo.title}</p>
+                        <p className="font-semibold">{logo.title.toLocaleUpperCase()}</p>
+                        <p>Expertise Level: {logo.level}0%</p>
+                        <p>Started Using: {format(logo.start, "MMMM yyyy")}</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
