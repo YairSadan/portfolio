@@ -95,9 +95,15 @@ const stack = [
     start: new Date(2024, 1),
     level: 4,
   },
+  {
+    title: "azure",
+    href: "https://azure.microsoft.com/",
+    start: new Date(2023, 7),
+    level: 4,
+  },
 ];
 const MyStack = () => {
-  const radius = 100; // Radius of the circle
+  const radius = 120; // Radius of the circle
   return (
     <motion.ul
       variants={container}
@@ -112,7 +118,6 @@ const MyStack = () => {
             const angle = (index / stack.length) * 2 * Math.PI; // Angle in radians for each logo
             const x = radius * Math.cos(angle); // Calculate x position
             const y = radius * Math.sin(angle); // Calculate y position
-
 
             return (
               <motion.li key={logo.title} variants={item}>
@@ -130,7 +135,9 @@ const MyStack = () => {
                         <LogoLink title={logo.title} href={logo.href} />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p className="font-semibold">{logo.title.toLocaleUpperCase()}</p>
+                        <p className="font-semibold">
+                          {logo.title.toLocaleUpperCase()}
+                        </p>
                         <p>Expertise Level: {logo.level}0%</p>
                         <p>Started Using: {format(logo.start, "MMMM yyyy")}</p>
                       </TooltipContent>
@@ -197,6 +204,9 @@ const LogoLink = ({ href, title }: LogoLinkProps) => {
       break;
     case "postgresql":
       className += " icon-[logos--postgresql]";
+      break;
+    case "azure":
+      className += " icon-[logos--azure-icon]";
       break;
   }
 
