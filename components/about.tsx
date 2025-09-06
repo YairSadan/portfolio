@@ -4,29 +4,29 @@ import FlipAnimation from "./framer-components/flip-animation";
 
 export default function About() {
   return (
-    <div className="flex flex-row py-6">
+    <section id="about" className="grid gap-4 py-10">
       <div className="flex flex-col md:p-5">
         <AnimatedText
           el="h1"
           text="Hi, I'm Yair Sadan"
           once
           repeatDelay={10000}
-          className="text-2xl md:text-6xl font-bold mb-4"
+          className="text-3xl md:text-5xl font-bold mb-4"
         />
-        <h2 className="text-lg md:text-3xl font-semibold mb-2">
-          Full-Stack Developer
+        <h2 className="text-lg md:text-2xl font-semibold mb-2">
+          Backend Developer
         </h2>
-        <p className="text-sm md:text-xl font-normal text-balance max-w-2xl mb-1">
-          Passionate Full Stack Developer with a solid grounding in C# and
-          JavaScript, ready to tackle complex challenges and contribute to
-          meaningful projects. Keen on continuous learning and adapting to new
-          technologies.
+        <p className="text-base md:text-lg text-muted-foreground text-balance max-w-3xl mb-2">
+          I design and ship production-grade services and APIs with a focus on
+          reliability, observability, and clean abstractions. My background
+          spans C#/.NET and TypeScript/Node.js, and I enjoy building small
+          products end-to-end when inspiration strikes.
         </p>
-        <p className="text-sm md:text-xl font-normal text-balance max-w-2xl mb-3">
-          Located in Tel Aviv, open to local and remote opportunities. Let&apos;s
-          connect to discuss how I can contribute to your team!
+        <p className="text-base md:text-lg text-muted-foreground text-balance max-w-3xl">
+          Based in Tel Aviv. I&apos;m always happy to chat about systems design,
+          DX, or interesting backend problems.
         </p>
       </div>
-    </div>
+    </section>
   );
 }

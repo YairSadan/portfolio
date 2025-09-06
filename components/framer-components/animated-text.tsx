@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 
 type AnimatedTextProps = {
   text: string | string[];
-  el?: keyof JSX.IntrinsicElements;
+  el?: React.ElementType;
   className?: string;
   once?: boolean;
   repeatDelay?: number;

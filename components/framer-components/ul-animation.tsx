@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 
 type UlAnimationProps = {
-  elements: { title: string; logo: JSX.Element; level: number }[];
+  elements: { title: string; logo: React.ReactNode; level: number }[];
   className?: string;
 };
 
