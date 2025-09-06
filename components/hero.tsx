@@ -1,19 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { Badge } from "./ui/badge";
 import { siteConfig } from "@/config/site";
 
 export default function Hero() {
   return (
     <section className="container mx-auto grid gap-8 py-12 lg:grid-cols-[1.2fr_0.8fr] items-center">
       <div className="space-y-6">
+        <div className="flex items-center gap-2">
+          <Badge className="hidden md:inline-flex">
+            Open to Backend & Full-Stack roles
+          </Badge>
+        </div>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-          Backend Engineer crafting reliable systems
+          Backend & Full‑Stack Engineer crafting reliable systems
         </h1>
         <p className="text-lg text-muted-foreground max-w-prose">
           I build scalable, well-tested services and APIs with modern tooling.
-          Currently shipping production features full-time — here are the side
-          projects I loved building.
+          Comfortable across the stack when needed — here are some side projects
+          I loved building.
         </p>
         <div className="flex flex-wrap gap-3">
           <Button asChild size="lg">

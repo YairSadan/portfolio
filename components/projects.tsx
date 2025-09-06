@@ -11,9 +11,16 @@ import { Button } from "./ui/button";
 import { ExternalLinkIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
 import { projects } from "@/config/consts";
 
-export default function Projects() {
+type ProjectsProps = {
+  withId?: boolean;
+};
+
+export default function Projects({ withId = true }: ProjectsProps) {
   return (
-    <div id="projects" className="grid lg:grid-cols-2 gap-4">
+    <div
+      {...(withId ? { id: "projects" } : {})}
+      className="grid lg:grid-cols-2 gap-4"
+    >
       {projects.map((project) => (
         <Card key={project.title} className="lg:flex">
           <div className="flex flex-col gap-2 p-2">

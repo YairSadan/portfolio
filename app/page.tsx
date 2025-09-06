@@ -1,3 +1,4 @@
+import CaseStudies from "@/components/case-studies";
 import Projects from "@/components/projects";
 import About from "@/components/about";
 import MyStack from "@/components/my-stack";
@@ -12,7 +13,10 @@ export default function Home() {
       <div className="grid lg:grid-cols-2 gap-8 items-start">
         <MyStack />
         <section>
-          <Projects />
+          <CaseStudies />
+          <div className="mt-6">
+            <Projects withId={false} />
+          </div>
         </section>
       </div>
     </div>

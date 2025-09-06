@@ -14,17 +14,17 @@ export default function About() {
           className="text-3xl md:text-5xl font-bold mb-4"
         />
         <h2 className="text-lg md:text-2xl font-semibold mb-2">
-          Backend Developer
+          Backend & Full‑Stack Developer
         </h2>
         <p className="text-base md:text-lg text-muted-foreground text-balance max-w-3xl mb-2">
           I design and ship production-grade services and APIs with a focus on
           reliability, observability, and clean abstractions. My background
-          spans C#/.NET and TypeScript/Node.js, and I enjoy building small
-          products end-to-end when inspiration strikes.
+          spans C#/.NET and TypeScript/Node.js, and I&rsquo;m comfortable
+          working across the stack when it helps ship value.
         </p>
         <p className="text-base md:text-lg text-muted-foreground text-balance max-w-3xl">
-          Based in Tel Aviv. I&apos;m always happy to chat about systems design,
-          DX, or interesting backend problems.
+          Always happy to chat about systems design, developer experience, or
+          interesting backend problems.
         </p>
       </div>
     </section>

@@ -1,13 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
-
-function Badge({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="inline-flex items-center rounded-md border px-2 py-1 text-xs font-medium text-foreground/80">
-      {children}
-    </span>
-  );
-}
+import { Badge } from "./ui/badge";
 
 export default function Highlights() {
   return (
@@ -71,7 +64,7 @@ export default function Highlights() {
 
       <div className="grid gap-6 md:grid-cols-2">
         <div className="rounded-lg border p-4 space-y-3">
-          <h3 className="text-lg font-semibold">Protocols & realtime</h3>
+          <h3 className="text-lg font-semibold">Protocols &amp; realtime</h3>
           <div className="flex flex-wrap gap-2">
             <Badge>HTTP</Badge>
             <Badge>WebSockets</Badge>
@@ -80,7 +73,9 @@ export default function Highlights() {
         </div>
 
         <div className="rounded-lg border p-4 space-y-3">
-          <h3 className="text-lg font-semibold">Integrations & automation</h3>
+          <h3 className="text-lg font-semibold">
+            Integrations &amp; automation
+          </h3>
           <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
             <li>
               Built and maintained integrations: Facebook, Shopify, multiple
