@@ -72,6 +72,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // JSON-LD structured data for SEO
+  // Note: This data is from static configuration (siteConfig), not user input
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
