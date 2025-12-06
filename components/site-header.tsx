@@ -15,7 +15,7 @@ export default function SiteHeader() {
         <MobileNav />
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <nav className="flex items-center">
-            <Link href={siteConfig.links.github} target="_blank">
+            <Link href={siteConfig.links.github} target="_blank" rel="noopener noreferrer">
               <div
                 className={cn(buttonVariants({ variant: "ghost" }), "w-9 px-0")}
               >
@@ -23,7 +23,7 @@ export default function SiteHeader() {
                 <span className="sr-only">GitHub</span>
               </div>
             </Link>
-            <Link href={siteConfig.links.linkedin} target="_blank">
+            <Link href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer">
               <div
                 className={cn(buttonVariants({ variant: "ghost" }), "w-9 px-0")}
               >

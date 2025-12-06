@@ -213,7 +213,7 @@ const LogoLink = ({ href, title }: LogoLinkProps) => {
   className +=
     " size-16 -translate-x-1/2 -translate-y-1/2 absolute cursor-pointer border-2 bg-black/40 dark:bg-white/40 rounded-full shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out";
 
-  return <Link href={href} target="_blank" className={className} />;
+  return <Link href={href} target="_blank" rel="noopener noreferrer" className={className} />;
 };
 
 const container = {

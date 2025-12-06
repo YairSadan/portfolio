@@ -32,7 +32,7 @@ export default function Highlights() {
           </ul>
           <div>
             <Button asChild size="sm" variant="outline">
-              <Link href="/resume.pdf" target="_blank">
+              <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 Download resume
               </Link>
             </Button>

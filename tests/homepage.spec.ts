@@ -5,7 +5,7 @@ test("homepage renders hero and projects", async ({ page }) => {
 
   await expect(
     page.getByRole("heading", {
-      name: /backend engineer crafting reliable systems/i,
+      name: /backend & full‑stack engineer crafting reliable systems/i,
     })
   ).toBeVisible();
 
