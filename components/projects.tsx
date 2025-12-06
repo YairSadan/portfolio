@@ -53,6 +53,7 @@ export default function Projects({ withId = true }: ProjectsProps) {
             <Link
               href={project.link}
               target="_blank"
+              rel="noopener noreferrer"
               className="relative group hover:scale-110 hover:shadow-2xl ease-in-out transform transition"
             >
               <Image
@@ -81,6 +82,7 @@ export default function Projects({ withId = true }: ProjectsProps) {
               <Link
                 href={project.githubLink}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="space-x-2"
               >
                 <GitHubLogoIcon />

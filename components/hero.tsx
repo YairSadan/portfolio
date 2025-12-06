@@ -26,12 +26,12 @@ export default function Hero() {
             <Link href="#projects">View projects</Link>
           </Button>
           <Button asChild size="lg" variant="outline">
-            <Link href={siteConfig.links.github} target="_blank">
+            <Link href={siteConfig.links.github} target="_blank" rel="noopener noreferrer">
               GitHub
             </Link>
           </Button>
           <Button asChild size="lg" variant="ghost">
-            <Link href={siteConfig.links.linkedin} target="_blank">
+            <Link href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer">
               LinkedIn
             </Link>
           </Button>
